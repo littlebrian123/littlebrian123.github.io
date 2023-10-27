@@ -1,0 +1,125 @@
+ /* XIAO QIANG,BRIAN 1155143253 */
+ body {
+   background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: scroll;
+   margin: 0;
+   padding: 0;
+ }
+
+ .modifycontainer {
+   text-align: center;
+ }
+
+ .rounded {
+   display: inline-block;
+   min-width: 85%;
+   min-height: 100%;
+   background: rgba(255, 255, 255, .7);
+   backdrop-filter: blur(3px);
+   box-shadow: 8px 5px 5px grey;
+ }
+
+ .evenspacing {
+   justify-content: space-evenly;
+   align-items: center;
+ }
+
+ .hiddentext {
+   display: none;
+ }
+
+ .needfadein {
+
+   opacity: 0;
+ }
+
+ .goodfont {
+   font-family: 'Tangerine', serif;
+
+   background: linear-gradient(to right, Magenta, DarkTurquoise);
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+   letter-spacing: 5px;
+   font-weight: bolder;
+
+ }
+
+ .showtext {
+
+   /*linear-gradient(#15b56d, transparent),
+   linear-gradient(90deg,#fce645, transparent),
+   linear-gradient(-90deg,#697ebb, transparent);*/
+
+   /*text-shadow: 6px 6px 4px #aaa;*/
+   /* font-size:150px; */
+   animation-name: textanimate;
+   animation-duration: 0.5s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   word-wrap: break-word;
+
+ }
+
+ .homeimg {
+   width: 20%;
+   animation-name: imageanimate;
+   animation-duration: 4s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+ }
+
+ @keyframes textanimate {
+
+   0%,
+   100% {
+     text-shadow: -4px -4px 3px #0ff, 4px 4px 3px #f00;
+   }
+
+   25% {
+     text-shadow: 4px 4px 3px #0ff, -4px -4px 3px #f00;
+   }
+
+   50% {
+     text-shadow: 4px -4px 3px #0ff, 4px -4px 3px #f00;
+   }
+
+   75% {
+     text-shadow: -4px 4px 3px #0ff, -4px 4px 3px #f00;
+   }
+ }
+
+
+ @keyframes imageanimate {
+   25% {
+     transform: rotate(90deg);
+   }
+
+   50% {
+     transform: rotate(180deg);
+   }
+
+   75% {
+     transform: rotate(270deg);
+   }
+
+   100% {
+     transform: rotate(360deg);
+   }
+ }
+
+ /* @media (prefers-color-scheme:dark) {
+  body{
+    filter: invert(1) hue-rotate(180deg);
+  }
+  .homeimg{
+    filter: invert(1) hue-rotate(180deg);
+  }
+  } */
+
+
+ .mode {
+   filter: invert(1) hue-rotate(180deg);
+ }

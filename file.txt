@@ -1,0 +1,15 @@
+<div id="comments" class="goodfont" style="display: block; font-size: 35px;">                    <div id="c1001" class="d-flex">
+                        <!-- flex layout -->
+                        <div class="flex-shrink-0">
+                            <!-- disallow div to shrink when page gets smaller -->
+                            <svg height="100" width="100">
+                                <circle cx="50" cy="50" r="40" fill="green">
+                                </circle>
+                            </svg>
+                        </div>
+                        <div class="flex-grow-1">
+                            <!-- allow div to grow and take up all space -->
+                            <h3>chuckjee@cse.cuhk.edu.hk</h3>
+                            <p>This lab is so fun! Let's explore further with Bootstrap and JS fetch.</p>
+                        </div>
+                    </div><div class="d-flex" id="c1002"><div class="flex-shrink-0"><svg height="100" width="100"> <circle cx="50" cy="50" r="40" fill="blue"></circle></svg></div> <div class="flex-grow-1"><h3>Brian123@cuhk.com</h3><p>Today is a good day.</p></div></div></div>
